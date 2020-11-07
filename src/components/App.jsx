@@ -1,6 +1,7 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
 import LineChart from './LineChart.jsx';
+import Menu from './Menu.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>THIS IS A GRAPH</h1>
+        <Menu />
         <LineChart dates={this.state.dates} prices={this.state.prices} />
       </div>
     );

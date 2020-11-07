@@ -4,5 +4,6 @@ h1 {
   background-color: black;
 }
 
-#myChart {
+.menuCheckbox {
+  margin-right: 25px;
 }
