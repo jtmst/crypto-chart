@@ -16,7 +16,6 @@ const axios = require("axios");
 let getChartData = (req, res) => {
     axios.get('https://api.coindesk.com/v1/bpi/historical/close.json')
         .then((response) => {
-            console.log(response.data.bpi)
             res.send(response.data.bpi)
         })
         .catch((err) => {
